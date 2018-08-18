@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Newsfeed</ion-title>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="popOver($event)">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let report of (itemReports | async)" [class.status]="report.status.false">
+        <ion-card-header color="primary">{{report.title}}</ion-card-header>
+        <ion-card-content>
+            <img src="{{report.image}}" alt="Report Image">
+            <h1>Location:</h1><p class="p">{{report.location}}</p>
+            <h1>Description:</h1><p class="p">{{report.description}}</p>
+        </ion-card-content>
+    </ion-card>
+
+  <ion-fab bottom right>
+    <button ion-fab color="primary" (click)="showModal()"><ion-icon name="md-create"></ion-icon></button>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer class="footer">
+    <ion-toolbar>
+      <p class="foot">&copy; 2017</p>
+    </ion-toolbar>
+</ion-footer>

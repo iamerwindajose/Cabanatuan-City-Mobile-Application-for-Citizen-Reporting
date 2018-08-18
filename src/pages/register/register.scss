@@ -1,0 +1,103 @@
+page-register {
+    .gender{
+        margin-top: 10px;
+    }
+    .signup{
+        float: right !important;
+    }
+    .btn{
+        margin-top: 20px;
+        float: right !important;
+    }
+    ion-card.card{
+        background: color($colors, dark);
+        color: color($colors, primary);
+        border-radius: 15px;
+    }
+    ion-item.item-md{
+        color: color($colors, primary);
+        background-color: rgba(250,250,250,0);
+    }
+    ion-datetime{
+        color: color($colors, primary);
+        height: 20px;
+        width: 100%;
+        margin-right: 20px;
+        border-bottom: 1px solid color($colors, primary);
+    }
+    .date-gender{
+        margin-top: 15px;
+    }
+    .datetime-md .datetime-placeholder{
+        color: color($colors, primary);
+        padding: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .datetime-md{
+        padding: 0px;
+    }
+    .select{
+        color: color($colors, primary);
+        border-bottom: 1px solid color($colors, primary);
+        padding-left: 0px;
+        margin-bottom: 29px;
+        height: 50px;
+        width: 100%;
+        // margin-right: 200px;
+        padding-bottom: 0px;
+        padding-top: 29.5px;
+    }
+    .select-md .select-placeholder{
+        color: color($colors, primary);
+        padding:0px;
+    }
+    ion-label{
+        font-size: 15px;
+        color: color($colors, primary);
+    }
+    ion-input{
+        color: color($colors, primary);
+        // color: white;
+        border-bottom: 1px solid color($colors, primary);        
+    }
+    .text-input-md{
+        margin-left: 0px;
+        color: color($colors, primary);
+    }
+    placeholder{
+        color: color($colors, primary);
+    }
+    .item-md{
+        font-size: 0.9em;
+        
+    }
+    .list-md .item-input:last-child{
+        border-bottom: none;
+    }
+    .label{
+         color: color($colors, primary)
+    }
+    .bday{
+        border-bottom: 1px solid color($colors, primary);
+    }
+    .gender{
+        border-bottom: 1px solid color($colors, primary);
+    }
+    .item-inner{
+        border-bottom: none !important;
+    }
+    .num{
+        border-bottom: none !important;
+        margin-top: -27px;
+    }
+    .last.item-input-has-focus.input-has-focus{
+        border-bottom: none !important;
+    }
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+        border-bottom-color: white !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    
+}

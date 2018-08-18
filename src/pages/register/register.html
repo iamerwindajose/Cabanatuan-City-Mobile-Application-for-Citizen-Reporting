@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create an Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="bg">
+    <ion-card>
+       <ion-card-header color="primary">
+           Account Info
+       </ion-card-header>
+        <ion-card-content>
+            <ion-list no-lines>
+              <ion-item>
+                   <ion-label floating>
+                       Email
+                   </ion-label>
+                    <ion-input [(ngModel)]="user.email" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                   <ion-label floating>
+                       Password
+                   </ion-label>
+                    <ion-input [(ngModel)]="user.password" type="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                   <ion-label floating>
+                       Confirm Password
+                   </ion-label>
+                    <ion-input [(ngModel)]="user.confirmpassword" type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+    
+    <ion-card>
+       <ion-card-header color="primary">
+           Personal Info
+       </ion-card-header>
+        <ion-card-content>
+            <ion-list no-lines>
+               <ion-item>
+                   <ion-label floating>
+                       Firstname
+                   </ion-label>
+                    <ion-input [(ngModel)]="profile.firstname" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                   <ion-label floating>
+                       Lastname
+                   </ion-label>
+                    <ion-input [(ngModel)]="profile.lastname" type="text"></ion-input>
+                </ion-item>
+                <ion-item class="date-gender">
+                  <!-- <ion-label class="bday">Birthdate</ion-label> -->
+                  <ion-datetime placeholder="Birthdate" displayFormat="MMM/DD/YYYY" [(ngModel)]="profile.birthdate"></ion-datetime>
+                  <ion-select placeholder="Gender" class="select" [(ngModel)]="profile.gender">
+                    <ion-option value="female">Female</ion-option>
+                    <ion-option value="male">Male</ion-option>
+                  </ion-select>
+                </ion-item>
+                <!-- <ion-item>
+                  <ion-label class="gender">Gender</ion-label>
+                </ion-item> -->
+                <ion-item class="num">
+                   <ion-label floating class="last">
+                       Phone Number
+                   </ion-label>
+                    <ion-input class="number" [(ngModel)]="profile.number" type="number"></ion-input>
+                </ion-item>
+                <div class="btn">
+                        <button class="signup" clear ion-button (click)="register()">Signup</button>
+                </div>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

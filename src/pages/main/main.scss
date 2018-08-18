@@ -1,0 +1,27 @@
+page-main {
+    .scroll-content{
+        overflow-y: hidden;
+    }
+    ion-icon{
+        text-align: center;
+    }
+    .footer{
+        height: 30px !important;
+        text-align: center;
+    }
+    .foot{
+        margin-top: -3px !important;
+    }
+    ion-icon{
+        font-size: 15px;
+    }
+    .card-md h1{
+        color: color($colors, primary);
+    }
+    .p{
+        color: color($colors, primary);
+    }
+    ion-card.card{
+        text-align: center;
+    }
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg" padding>
+            <img class="logo" src="../../assets/images/logo.png" alt="Brand Logo">
+            <div class="container">
+               <ion-list>
+                    <ion-item>
+                        <ion-label floating>Email</ion-label>
+                        <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                       <ion-label floating>Password</ion-label>
+                        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+                    </ion-item>
+                    <button class="loginbtn" round ion-button (click)="login(user)">Login</button>
+                </ion-list>
+            </div>
+</ion-content>

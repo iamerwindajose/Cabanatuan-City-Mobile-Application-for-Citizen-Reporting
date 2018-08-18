@@ -1,0 +1,41 @@
+page-modal {
+    .fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    }
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    .btnFab{
+    	margin-left: auto;
+    	margin-right: auto;
+        margin-top: 10.5px;
+    }
+    .btnUpload{
+		margin-right: auto;
+		margin-left: auto;
+    }
+    ion-input{
+    	color: white;
+    	border-bottom: 1px solid color($colors, primary);
+    }
+    ion-textarea{
+    	border: 2px solid color($colors, dark);
+    	border-radius: 5px;
+    	background: color($colors, light);
+    	height: 90px;
+    	font-size: 13px;
+    }
+    ion-label{
+    	color: color($colors, primary);
+    }
+}
